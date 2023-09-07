@@ -7,6 +7,10 @@
   <router-view/>
 </template>
 
+<script>
+
+</script>
+
 <style scoped>
 nav {
   padding: 30px;
@@ -27,6 +31,9 @@ nav .nav-cell {
 
 nav .nav-cell.router-link-exact-active {
   color: var(--primary-color);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(255,255,255,1);
+  box-shadow: 0px 0px 8px 1px rgba(255,255,255,1);
 }
 
 /*main logo */

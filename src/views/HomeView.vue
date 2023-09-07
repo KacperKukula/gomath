@@ -1,17 +1,31 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Witaj na mojej stronie poświęconej matematyce</h1>
+    <div class="sitemap">
+      <RouteList />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import RouteList from '@/components/RouteList.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    RouteList
   }
 }
 </script>
+
+<style scoped>
+  .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sitemap {
+    width: clamp(0px, 100%, 1200px);
+    background-color: red;
+  }
+</style>

@@ -22,3 +22,18 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Our semantic
+
+The components are typed `PascalCase`
+```
+RouterList.vue
+RouterList
+```
+
+And vital components are typed `camelCase`
+```
+homeVue.vue
+homeVue
+```
