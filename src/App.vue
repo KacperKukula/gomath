@@ -1,5 +1,6 @@
 <template>
   <menuGoMath :items="routes" />
+  <div class="line"></div>
   <router-view/>
 </template>
 
@@ -19,5 +20,8 @@ export default {
 </script>
 
 <style scoped>
-
+.line {
+  width: 100%;
+  border: 1px solid #dfdfdf;
+}
 </style>
