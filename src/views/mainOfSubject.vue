@@ -1,20 +1,21 @@
 <template>
     <div>
+      <h2>Lista materiałów</h2>
       <RouteListVue />
     </div>
 </template>
 
 <script>
-import RouteListVue from '@/components/RouteList.vue'
+import RouteListVue from '@/components/RouteList.vue';
 
 export default {
-  computed: {
-    routes() {
-      return this.$router.options.routes;
-    }
-  },
+  props: ['subjectRoutes'],
   components: {
     RouteListVue,
   },
 };
 </script>
+
+<style>
+
+</style>

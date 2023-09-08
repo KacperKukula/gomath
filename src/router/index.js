@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import homeView from '../views/homeView.vue';
-import mainOfSubject from '../views/mainOfSubject.vue'
+import mainOfSubject from '../views/mainOfSubject.vue';
 import lessonMiscalculation from '../views/numericMethods/lessonMiscalculation';
+//Routes
+import numericMethods_routes from './numericMethods/numericMethodsRoutes.js';
 
 
 // route level code-splitting
@@ -11,27 +13,23 @@ import lessonMiscalculation from '../views/numericMethods/lessonMiscalculation';
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    pathName: 'Home',
     component: homeView,
     mainSite: true,
   },
   {
     path: '/numericMethods',
-    name: 'Metody numeryczne',
+    pathName: 'Metody numeryczne',
     component: mainOfSubject,
     mainSite: false,
-    children: [
-      { path: 'misscalculation', component: lessonMiscalculation, },
-      { path: 'misscalculation', component: lessonMiscalculation, },
-      { path: 'misscalculation', component: lessonMiscalculation, },
-      { path: 'misscalculation', component: lessonMiscalculation, },
-      { path: 'misscalculation', component: lessonMiscalculation, },
-    ]
+    children: numericMethods_routes,
+    props: { subjectRoutes: numericMethods_routes },
   },
   {
     path: '/propabilistics',
-    name: 'Propabilistyka',
+    pathName: 'Propabilistyka',
     component: mainOfSubject,
+    props: true,
     mainSite: false,
     children: [
       { 

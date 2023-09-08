@@ -4,6 +4,8 @@
 
     --text-color: #18191b;
 
+    --angel-white: #f3f3f3;
+
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -13,7 +15,7 @@
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: var(--angel-white);
 }
 
 h1 {
@@ -22,4 +24,9 @@ h1 {
 
 h2 {
     font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }

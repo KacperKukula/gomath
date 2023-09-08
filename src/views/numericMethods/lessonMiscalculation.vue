@@ -4,9 +4,7 @@
 
 <script>
 export default {
-    setup() {
-        console.log('miscalculations');
-    }
+
 }
 </script>
 

@@ -1,10 +1,5 @@
 <template>
   <menuGoMath :items="routes" />
-  <!-- <nav>
-    <router-link to="/numeric-methods" class="nav-cell">Metody numeryczne</router-link>
-    <router-link to="/" class="nav-cell"><img class="logo" src="./assets/LOGO.png" alt="GOMATH"></router-link>
-    <router-link to="/numeric-methods" class="nav-cell">Metody numeryczne</router-link>
-  </nav> -->
   <router-view/>
 </template>
 
