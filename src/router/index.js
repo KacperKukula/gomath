@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import homeView from '../views/homeView.vue';
+import mainOfSubject from '../views/mainOfSubject.vue'
 import lessonMiscalculation from '../views/numericMethods/lessonMiscalculation';
 
 
@@ -10,15 +11,28 @@ import lessonMiscalculation from '../views/numericMethods/lessonMiscalculation';
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: homeView,
-    displayTree: false,
+    mainSite: true,
   },
   {
     path: '/numericMethods',
-    name: 'numericMethods',
-    component: homeView,
-    displayTree: true,
+    name: 'Metody numeryczne',
+    component: mainOfSubject,
+    mainSite: false,
+    children: [
+      { path: 'misscalculation', component: lessonMiscalculation, },
+      { path: 'misscalculation', component: lessonMiscalculation, },
+      { path: 'misscalculation', component: lessonMiscalculation, },
+      { path: 'misscalculation', component: lessonMiscalculation, },
+      { path: 'misscalculation', component: lessonMiscalculation, },
+    ]
+  },
+  {
+    path: '/propabilistics',
+    name: 'Propabilistyka',
+    component: mainOfSubject,
+    mainSite: false,
     children: [
       { 
         path: 'misscalculation', 

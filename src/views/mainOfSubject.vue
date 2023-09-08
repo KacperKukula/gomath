@@ -1,8 +1,11 @@
 <template>
-    <div></div>
+    <div>
+      <RouteListVue />
+    </div>
 </template>
 
 <script>
+import RouteListVue from '@/components/RouteList.vue'
 
 export default {
   computed: {
