@@ -1,7 +1,7 @@
 <template>
     <div>
       <h2>Lista materiałów</h2>
-      <RouteListVue />
+      <RouteListVue :routesTree="subjectRoutes" />
     </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
+h2 {
+  width: 100%;
+  padding: 5vh 0;
+  color: white;
+  background: var(--primary-gradient-convex);
+}
 </style>

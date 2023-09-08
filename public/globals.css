@@ -6,6 +6,8 @@
 
     --angel-white: #f3f3f3;
 
+    --primary-gradient-convex: linear-gradient(0deg, rgba(66,185,131,1) 0%, rgb(103, 193, 151) 50%, rgba(66,185,131,1) 100%);
+
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -20,10 +22,12 @@ body {
 
 h1 {
     font-size: 1.6rem;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.3rem;
+    margin: 0;
 }
 
 a {
