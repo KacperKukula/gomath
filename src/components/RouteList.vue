@@ -1,7 +1,7 @@
 <template>
         <ul>
             <li v-for="mainRoute in routesTree" :key="mainRoute.path">
-                <router-link :to="mainRoute.path">{{ mainRoute.pathName }}</router-link>
+                <router-link :to="mainRoute.path">{{ mainRoute.name }}</router-link>
             </li>
         </ul>
 </template>

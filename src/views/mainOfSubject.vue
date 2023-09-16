@@ -3,15 +3,25 @@
       <h2>Lista materiałów</h2>
       <RouteListVue :routesTree="subjectRoutes" />
     </div>
+    <!-- <router-view></router-view> -->
 </template>
 
 <script>
 import RouteListVue from '@/components/RouteList.vue';
+//import { computed } from 'vue';
 
 export default {
   props: ['subjectRoutes'],
   components: {
     RouteListVue,
+  },
+  setup() {
+    // const isPropabilisticsRoute = computed(() => {
+    //     return this.$route.path === '/propabilistics' && this.$route.matched.length === 1;
+    //   }
+    // );
+    
+    // return { isPropabilisticsRoute };
   },
 };
 </script>

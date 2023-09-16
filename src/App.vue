@@ -24,4 +24,7 @@ export default {
   width: 100%;
   border: 1px solid #dfdfdf;
 }
+section.lession {
+  padding: 4vw;
+}
 </style>

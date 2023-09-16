@@ -4,12 +4,12 @@
         <!--MENU TREE-->
         <div v-for="(item, index) in items" :key="index" class="nav-cell">
             <!--MAIN CELL-->
-            <router-link :to="item.path" exact class="nav-link">{{ item.pathName }}</router-link>
+            <router-link :to="item.path" exact class="nav-link">{{ item.name }}</router-link>
             
             <!--SUBMENU CELLS-->
             <div class="nav-submenu">
                 <div v-for="(child, index) in item.children" :key="index" class="nav-subcell">
-                    <router-link :to="child.path" class="nav-link">{{ child.pathName }}</router-link>
+                    <router-link :to="item.path + '/' + child.path" class="nav-link">{{ child.name }}</router-link>
                 </div>
             </div>
         </div>
