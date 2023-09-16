@@ -1,7 +1,7 @@
-import testVue from '@/views/numericMethods/testVue';
+import lessonMiscalculation from '@/views/numericMethods/lessonMiscalculation';
 
 const numericMethods = [
-    { path: 'misscalculation', component: testVue, name: "Błędy zaokrągleń" },
+    { path: 'misscalculation', component: lessonMiscalculation, name: "Błędy zaokrągleń" },
 ];
 
 export default numericMethods;
